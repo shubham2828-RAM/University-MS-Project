@@ -170,11 +170,6 @@ public class AddStudent1 extends JFrame  implements ActionListener{
         cancel.setFont(new Font("Tahoma",Font.BOLD,18));
         add(cancel);
 
-
-
-
-
-
         setVisible(true);
     }
     public void actionPerformed(ActionEvent ae){

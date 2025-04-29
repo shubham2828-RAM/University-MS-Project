@@ -6,6 +6,18 @@ import java.awt.event.*;
 
 public class project extends JFrame implements ActionListener{
     project(){
+//        JPanel panel = new JPanel();
+//        panel.setLayout(null);
+//        panel.setBounds(20,80,200,280);
+//        panel.setBackground(new Color(109,164,170));
+//        add(panel);
+//        JTextField Enqiry = new JTextField("Enquiry");
+//        Enqiry.setBounds(45,85,50,15);
+//        Enqiry.setBackground(new Color(252, 44, 3));
+//        Enqiry.setFont(new Font("Tahoma",Font.BOLD,12));
+//        add(Enqiry);
+
+
         setSize(1540,850);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Icon/first.jpg"));
@@ -13,6 +25,7 @@ public class project extends JFrame implements ActionListener{
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
         add(image);
+
 
         JMenuBar mb = new JMenuBar();
 
@@ -81,6 +94,10 @@ public class project extends JFrame implements ActionListener{
         exit.addActionListener(this);
         mb.add(exit);
 
+//        Main window app
+        JPanel equ = new JPanel();
+
+
         setJMenuBar(mb);
 
         setVisible(true);
@@ -120,7 +137,5 @@ public class project extends JFrame implements ActionListener{
     }
     public static void main(String[] args) {
         new project();
-
-
     }
 }
