@@ -6,7 +6,6 @@ import java.awt.event.*;
 
 public class project extends JFrame implements ActionListener{
     project(){
-
         setSize(1540,850);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Icon/first.jpg"));
@@ -15,7 +14,7 @@ public class project extends JFrame implements ActionListener{
         JLabel image = new JLabel(i3);
         add(image);
 
-        // Enquiry Panel - 8cm x 8cm
+           // Enquiry Panel - 8cm x 8cm
         JPanel enquiryPanel = new JPanel();
         enquiryPanel.setLayout(null);
         enquiryPanel.setBackground(new Color(224, 255, 255)); // Lighter cyan for a fresh look
@@ -112,13 +111,6 @@ public class project extends JFrame implements ActionListener{
                 JOptionPane.showMessageDialog(null, "Error submitting enquiry.");
             }
         });
-
-
-
-
-
-
-
         // Marquee Banner Panel
         JPanel bannerPanel = new JPanel();
         bannerPanel.setLayout(null);
@@ -126,7 +118,7 @@ public class project extends JFrame implements ActionListener{
         bannerPanel.setBounds(0, 10, 1540, 56); // 2cm from top, 2cm tall
         image.add(bannerPanel); // Add to background image
 
-        JLabel bannerText = new JLabel("Welcome to Bright Career Institute | Admissions Open | Contact: brightcareerinst@gmail.com");
+        JLabel bannerText = new JLabel("Welcome to Bright Career Institute | Admissions Open | Contact: BrightCareerInst@gmail.com");
         bannerText.setFont(new Font("Tahoma", Font.BOLD, 24));
         bannerText.setForeground(Color.RED);
         bannerText.setBounds(1540, 10, 1500, 30); // Start from right, scroll left
@@ -146,10 +138,9 @@ public class project extends JFrame implements ActionListener{
         timer.start();
 
 
-
         JMenuBar mb = new JMenuBar();
 
-//        NEW information
+        //        NEW information
         JMenu newinfor = new JMenu("New Information");
         newinfor.setForeground(Color.BLUE);
         mb.add(newinfor);
@@ -164,7 +155,7 @@ public class project extends JFrame implements ActionListener{
         Studentinfo.addActionListener(this);
         newinfor.add(Studentinfo);
 
-//        Details information
+        //        Details information
         JMenu details = new JMenu("View  Details");
         details.setForeground(Color.red);
         mb.add(details);
@@ -178,7 +169,7 @@ public class project extends JFrame implements ActionListener{
         Studentdetails.addActionListener(this);
         details.add(Studentdetails);
 
-//      Leave
+        //      Leave
         JMenu Leaves = new JMenu("Leaves");
         Leaves.setForeground(Color.blue);
         mb.add(Leaves);
@@ -193,7 +184,7 @@ public class project extends JFrame implements ActionListener{
         StudentLeave.addActionListener(this);
         Leaves.add(StudentLeave);
 
-//        Attendence for student
+        //        Attendence for student
         JMenu attendance = new JMenu("Attendance");
         attendance.setForeground(Color.BLUE);
         mb.add(attendance);
@@ -218,9 +209,7 @@ public class project extends JFrame implements ActionListener{
         studentReport.addActionListener(this);
         reportMenu.add(studentReport);
 
-
-
-//        utility
+        //        utility
         JMenu Utility = new JMenu("Utility");
         Utility.setForeground(Color.RED);
         mb.add(Utility);
@@ -238,7 +227,6 @@ public class project extends JFrame implements ActionListener{
 //        Exit
         JMenu exit = new JMenu("EXIT");
         exit.setForeground(Color.BLUE);
-
         JMenuItem exitItem = new JMenuItem("Exit");
         exitItem.setBackground(Color.white);
         exitItem.addActionListener(this);
@@ -247,9 +235,7 @@ public class project extends JFrame implements ActionListener{
 
         setJMenuBar(mb);
 
-
-
-        // Footer Panel
+         // Footer Panel
         JPanel footerPanel = new JPanel();
         footerPanel.setLayout(null);
         footerPanel.setBackground(new Color(245, 245, 245));  // Light gray background
@@ -280,14 +266,12 @@ public class project extends JFrame implements ActionListener{
             }
         }
 
-
-// Copyright
+        // Copyright
         JLabel copyright = new JLabel("COPYRIGHT © 2025. UNIVERSITY. ALL RIGHTS RESERVED.");
         copyright.setFont(new Font("Tahoma", Font.PLAIN, 12));
         copyright.setForeground(Color.BLACK);
         copyright.setBounds(575, 35, 600, 20);
         footerPanel.add(copyright);
-
 
 
 
@@ -345,8 +329,6 @@ public class project extends JFrame implements ActionListener{
             }
 
         }
-
-
 
 
     }
