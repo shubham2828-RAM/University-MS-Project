@@ -1,0 +1,20 @@
+use universitymanagementsystem;
+
+CREATE TABLE student_subjects (
+    rollno VARCHAR(20),
+    subject VARCHAR(50),
+    marks INT
+);
+
+INSERT INTO student_subjects VALUES
+('121049124', 'DAA', 85),
+('121049124', 'ME', 78),
+('121049124', 'JAVA', 90),
+('121049124', 'Chemistry', 70),
+('121049124', 'DM', 88),
+('121049124', 'ES', 76);
+
+
+select * from student_subjects;
+
+
